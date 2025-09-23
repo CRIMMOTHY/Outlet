@@ -1,9 +1,18 @@
 body {
-    background: #f4f6fa;
+    background: url('https://t4.ftcdn.net/jpg/03/00/85/23/360_F_300852364_qSrtNxY6pokaVR7er7knpb8AyYJSxtUd.jpg') center center / cover no-repeat fixed;
     color: #222;
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.7);
+    z-index: -1;
+    pointer-events: none;
 }
 
 .container {
@@ -29,6 +38,9 @@ header {
     margin: 0;
     font-size: 2.5em;
     letter-spacing: 2px;
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .tagline {
@@ -42,7 +54,7 @@ nav {
     background: #ffffff;
     border-radius: 6px;
     margin-top: 1.5em;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 nav ul {
@@ -95,7 +107,7 @@ article {
 }
 
 footer {
-    text-align: center;
+    text-align: left;
     margin-top: 2em;
     padding-top: 1em;
     border-top: 2px solid #e0e0e0;
