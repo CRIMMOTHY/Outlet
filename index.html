@@ -4,22 +4,52 @@
         <meta charset="UTF-8">
         <title>The Outlet - School News</title>
         <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div>
-            <section class="scroll 1">
-                <section id="island">
-                    <h1 id="title">THE OUTLET</h1>
-                    <h3 id="subtitle">MAGAZINE CLUB @ ENERGY INSTITUE HS</h3>
-                    <button id="aboutus">ABOUT THE CLUB</button>
-                    <button id="team">OUR TEAM</button>
-                    <button id="join">JOIN THE CLUB</button>
-                    <button id="contact">CONTACT</button>
+            <section class="scroll 1 visible">
+                <div class="right island">
+                    <p id="title">The Outlet</p>
+                    <p id="subtitle">Magazine Club @ Energy Institue HS</p>
+                    <div id="buttons">
+                        <a href="">
+                            <!--Will replace this with a replace keyword in the actual serverside code-->
+                            <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="7em" width="100%" viewbox="0 0 83 12">
+                                <path d="m0 1c0-.75.25-1 1-1h80c.75 0 1 .25 1 1v10c0 .75-.25 1-1 1h-80c-.75 0-1-.25-1-1l0-10m2-.5h-1c-.3 0-.5.2-.5.5v10c0 .3.2.5.5.5h80c.3 0 .5-.2.5-.5v-10c0-.3-.2-.5-.5-.5z" />
+                                <text font-size="calc(1em/5)" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">ABOUT THE CLUB</text>
+                            </svg>
+                        </a><br>
+                        <a href="">
+                            <!--Will replace this with a replace keyword in the actual serverside code-->
+                            <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="7em" width="100%" viewbox="0 0 83 12">
+                                <path d="m0 1c0-.75.25-1 1-1h80c.75 0 1 .25 1 1v10c0 .75-.25 1-1 1h-80c-.75 0-1-.25-1-1l0-10m2-.5h-1c-.3 0-.5.2-.5.5v10c0 .3.2.5.5.5h80c.3 0 .5-.2.5-.5v-10c0-.3-.2-.5-.5-.5z" />
+                                <text font-size="calc(1em/5)" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">OUR TEAM</text>
+                            </svg>
+                        </a><br>
+                        <a href="">
+                            <!--Will replace this with a replace keyword in the actual serverside code-->
+                            <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="7em" width="100%" viewbox="0 0 83 12">
+                                <path d="m0 1c0-.75.25-1 1-1h80c.75 0 1 .25 1 1v10c0 .75-.25 1-1 1h-80c-.75 0-1-.25-1-1l0-10m2-.5h-1c-.3 0-.5.2-.5.5v10c0 .3.2.5.5.5h80c.3 0 .5-.2.5-.5v-10c0-.3-.2-.5-.5-.5z" />
+                                <text font-size="calc(1em/5)" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">JOIN THE CLUB</text>
+                            </svg>
+                        </a><br>
+                        <a href="">
+                            <!--Will replace this with a replace keyword in the actual serverside code-->
+                            <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="7em" width="100%" viewbox="0 0 83 12">
+                                <path d="m0 1c0-.75.25-1 1-1h80c.75 0 1 .25 1 1v10c0 .75-.25 1-1 1h-80c-.75 0-1-.25-1-1l0-10m2-.5h-1c-.3 0-.5.2-.5.5v10c0 .3.2.5.5.5h80c.3 0 .5-.2.5-.5v-10c0-.3-.2-.5-.5-.5z" />
+                                <text font-size="calc(1em/5)" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">CONTACT</text>
+                            </svg>
+                        </a>
+                    </div>
                     <div id="socials">
+                        <!--Need to edit these cuz their sooooo offcentered-->
                         <a href="">
                             <!--CREDIT: Taken from https://gist.github.com/jemminger/91c69559f5ce1cc45cecc1f2614325c6?short_path=68d0366-->
-                            <svg id="instagram" fill="rgb(0, 0, 0)" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 169.063 169.063" style="enable-background:new 0 0 169.063 169.063;" xml:space="preserve">
+                            <svg id="instagram" fill="rgb(255, 255, 255)" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 169.063 169.063" style="enable-background:new 0 0 169.063 169.063;" xml:space="preserve">
                                 <g>
                                     <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752 c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407 c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752 c17.455,0,31.656,14.201,31.656,31.655V122.407z" />
                                     <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561 C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561 c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z" />
@@ -29,39 +59,49 @@
                         </a>
                         <a href="">
                             <!--@KimchhunPoeng-->
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" class="icon icons8-Facebook-Filled" >
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50" fill="#FFFFFF">
                                 <path d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z" />
                             </svg>
                         </a>
-                        <a href="">email</a>
+                        <a href="">
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="30px" hight="30px" viewBox="0 0 15 15" preserveAspectRatio="xMidYMid meet">
+                                <metadata>
+                                    Created by potrace 1.15, written by Peter Selinger 2001-2017
+                                    With SvgPathEditor to edit
+                                </metadata>
+                                <g fill="#FFFFFF" stroke="none">
+                                    <path d="m.7931 11.3911c-.3835-.0369-.6995-.3241-.7778-.7076-.0171-.0801-.0171-.2133-.0153-5.0141l.0027-4.9313.0198-.0693c.0999-.3511.3529-.5869.7049-.6571.0477-.0099 1.2954-.0117 6.783-.0117l6.7245 0 .0801.0207c.1719.0432.3007.1161.4249.2395.1269.1278.2034.2692.2449.4555.0144.063.0153.415.0153 4.9781 0 3.9978-.0018 4.9214-.0117 4.9691-.0378.1908-.117.3412-.2494.4726-.1521.153-.3304.2359-.5518.2566-.1161.0108-13.2807.0108-13.3941-.0009zm9.787-4.203c-1.6933-1.6933-3.0787-3.0787-3.0787-3.0787 0 0-1.3854 1.3854-3.0787 3.0787l-3.0787 3.0787 6.1574 0 6.1574 0-3.0787-3.0787zm-7.6724-3.6566-1.7842-1.7851 0 3.5693 0 3.5693 1.7842-1.7851 1.7851-1.7842-1.7851-1.7842zm10.9626 1.7824 0-3.5675-1.7842 1.7842-1.7851 1.7851 1.7824 1.7824c.9803.9803 1.7833 1.7824 1.7842 1.7824.0018 0 .0027-1.6051.0027-3.5666zm-7.6607-1.5132c.4294-.4294.7391-.731.7751-.7562.0837-.0594.1962-.1107.3007-.1377.0738-.0189.1116-.0234.207-.0234.1386-.0009.2241.0153.343.0639.1602.0657.1593.0648.9425.8462l.7265.7256 1.6951-1.6951 1.6942-1.6942-5.3967 0-5.3967 0 1.6924 1.6924c.9308.9308 1.6942 1.6924 1.6969 1.6924.0018 0 .3259-.3214.7202-.7139z"/>
+                                </g>
+                            </svg>
+                        </a>
                     </div>
-                </section>
+                </div>
             </section>
-            <section class="scroll 2">
+            <section class="scroll 2 hidden">
                 <!--Post container-->
                 <div></div>
                 <div>
-                    <button>BUY ARTICLE</button>
-                    <button>VIEW PAST ARTICLES</button>
-                    <button>SOURCES</button>
+                    <button>Buy Article</button>
+                    <button>View Past Articles</button>
+                    <button>Sources</button>
                     <!--Donate should be bigger so it stands out more. Kind of like the BUY ARTICLE button but dont do the same thing-->
-                    <button>DONATE</button>
+                    <button>Donate</button>
                 </div>
             </section>
-            <section class="scroll 3">
+            <section class="scroll 3 hidden">
                 <div>
                     <!--Add the custom underline-->
-                    <h1>ABOUT THE CLUB</h1>
+                    <h1>About The Club</h1>
                     <img alt="Sophia giving a speach (?)" />
                 </div>
                 <div>
                     <!--Add top line-->
-                    <h3>WELCOME TO THE OUTLET, OUR SCHOOL'S STUDENT-RUN NEWSPAPER CLUB! WE'RE DEDICATED TO CREATING A SPACE WHERE STUDENTS CAN SHARE THEIR VOICES, CELEBRATE OUR COMMUNITY, AND DISCOVER STORIES THAT INSPIRE AND ENTERTAIN. WHETHER IT'S UNCOVERING THE LASTEST CAMPUS NEWS, HIGHLIGHTING STUDENT ACHIEVEMENTS, OR SPARKING CONVERSATIONS ABOUT TOPICS THAT MATTER, THE OUTLET GIVE EVERY STUDENT A PLATFORM TO BE HEARD. OUR GOAL IS TO CONNECT, INFORM, AND INSPIRE THROUGH CREATIVITY, COLLABORATION, AND STORYTELLING. JOIN US AS WE WRITE THE STORIES THAT SHAPE OUR SCHOOL -- ONE ARTICLE, ONE IDEA, AND ONE VOICE AT A TIME.</h3>
+                    <h3>Welcome to The Outlet, our school's student-run newspaper club! We're dedicated to creating a space where students can share their voices, celebrate our community, and discover stories that inspire and entertain.<br><br>Whether it's uncovering the latest campus news, highlighting student achievements, or sparking conversations about topics that matter, The Outlet gives every student a platform to be heard. Our goal is to connect, inform, and inspire through creativity, collaboration, and storytelling.<br><br>Join us as we write the stories that shape our school — one article, one idea, and one voice at a time.</h3>
                     <!--Add bottom line-->
                 </div>
             </section>
-            <section class="scroll 4">
-                <h1>OUR TEAM</h1>
+            <section class="scroll 4 hidden">
+                <h1>Our Team</h1>
                 <div class="subscroll 1">
                     <div class="mugshot_1"></div>
                     <div class="mugshot_2"></div>
@@ -73,38 +113,38 @@
                     <div class="mugshot_5"></div>
                 </div>
             </section>
-            <section class="scroll 5">
+            <section class="scroll 5 hidden">
                 <div>
-                    <h1>JOIN OR TEAM</h1>
+                    <h1>Join Our Team</h1>
                     <img />
                     <img />
                     <img />
                 </div>
                 <div>
                     <!--Will be replaced with an a tag that looks like a button-->
-                    <button>CLICK HERE</button>
-                    <h3>ROLES:</h3>
-                    <h5>Writes: describe<br>PHOTOGRAPHERS: describe<br>editors: describe (must apply)<br>Social Media: describe<br>design: describe<br>INTERVIEW: describe</h5>
+                    <button>Click Here</button>
+                    <h3>Roles:</h3>
+                    <h5>Writes: describe<br>Photographers: describe<br>Editors: describe (must apply)<br>Social Media: describe<br>Design: describe<br>Interview: describe</h5>
                 </div>
             </section>
-            <section class="scroll 6">
+            <section class="scroll 6 hidden">
                 <div>
-                    <h1>CONTACT</h1>
+                    <h1>Contact</h1>
                     <img />
                 </div>
                 <div>
-                    <h2>LEADS:</h2>
-                    <h4>CLUB FOUNDERS:</h4>
-                    <h5>TEACHER: [INSERT THOMAS EMAIL HERE]<br>STUDENT: [INSERT SOPHIA EMAIL HERE]</h5>
+                    <h2>Leads:</h2>
+                    <h4>Club Founders:</h4>
+                    <h5>Teacher: [INSERT THOMAS EMAIL HERE]<br>Student: [INSERT SOPHIA EMAIL HERE]</h5>
                     <br>
                     <br>
-                    <h4>STUDENT LEADS:</h4>
-                    <h5>WRITING LEAD: [MARIA EMAIL]<br>PHOTOGRAPHY LEAD: [OSCAR EMAIL]<br>EDITING LEAD: [SOPHIA EMAIL]<br>SOCIAL MEDIA LEAD: s2103421@online.houstonisd.org [add name]<br>DESIGN LEAD: [CADY EMAIL]<br>INTERVIEW LEAD: TBD<br>FINANCE LEAD: s2103421@online.houstonisd.org</h5>
+                    <h4>Student Leads:</h4>
+                    <h5>Writing Lead: [MARIA EMAIL]<br>Photography Lead: [OSCAR EMAIL]<br>Editing Lead: [SOPHIA EMAIL]<br>Social Media Lead: s2103421@online.houstonisd.org [add name]<br>Design Lead: [CADY EMAIL]<br>Interview Lead: TBD<br>Finance Lead: s2103421@online.houstonisd.org</h5>
                 </div>
             </section>
-            <section class="scroll 7">
+            <section class="scroll 7 hidden">
                 <div>
-                    <h1>SOURCES</h1>
+                    <h1>Sources</h1>
                     <img />
                 </div>
                 <div>
@@ -113,29 +153,48 @@
                     <img />
                 </div>
             </section>
-            <section class="scroll 8">
+            <section class="scroll 8 hidden">
                 <div>
-                    <h1>DONATE</h1>
+                    <h1>Donate</h1>
                     <img />
                 </div>
                 <div>
-                    TO DONATE RESOURCES OR FUNDING TO OUR CLUB, PLEASE REACH OUT TO OUR FUNDING MANAGER, ROWAN LAU AT:
+                    To donate resources or funding to our club, please reach out to our funding manager, Rowan Lau at:
                     <div>
                         s2103421@online.houstonisd.org
                         <br>
-                        YOUR DONATION WOULD MEAN THE WORLD.
+                        Your donation would mean the world.
                     </div>
                 </div>
             </section>
-            <section class="scroll 9">
+            <section class="scroll 9 hidden">
                 <div></div>
                 <div></div>
                 <div>
-                    MORE ARTICLES COMMING SOON!!
+                    More articles comming soon!!
                 </div>
             </section>
         </div>
         <!--Gets the latest post-->
         <script></script>
+        <!--Scroll control-->
+        <script>
+            function delay(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+
+            let lastY = window.scrollY;
+
+            window.onscroll = async (ev) => {
+                if (lastY - window.scrollY == 0) return;
+                if (lastY - window.scrollY > 0) {
+                    //Scroll down
+                } else {
+                    //Scroll up
+                }
+
+                await delay(1000);
+            };
+        </script>
     </body>
 </html>
