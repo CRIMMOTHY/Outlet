@@ -1,48 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Outlet - School News</title>
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-    <div class="container">
-        <header>
-            <div class="logo-area">
-                <h1>The Outlet</h1>
-                <span class="tagline">The Energy Institute High School newspaper</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#sports">Sports</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <section id="news">
-                <h2>News</h2>
-                <article>
-                    <h3>School News</h3>
-                    <p>More school news info</p>
-                </article>
+    <head>
+        <meta charset="UTF-8">
+        <title>The Outlet - School News</title>
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <section class="scroll 1">
+                <section id="island">
+                    <h1 id="title">THE OUTLET</h1>
+                    <h3 id="subtitle">MAGAZINE CLUB @ ENERGY INSTITUE HS</h3>
+                    <button id="aboutus">ABOUT THE CLUB</button>
+                    <button id="team">OUR TEAM</button>
+                    <button id="join">JOIN THE CLUB</button>
+                    <button id="contact">CONTACT</button>
+                    <div id="socials">
+                        <a href="">
+                            <!--CREDIT: Taken from https://gist.github.com/jemminger/91c69559f5ce1cc45cecc1f2614325c6?short_path=68d0366-->
+                            <svg id="instagram" fill="rgb(0, 0, 0)" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 169.063 169.063" style="enable-background:new 0 0 169.063 169.063;" xml:space="preserve">
+                                <g>
+                                    <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752 c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407 c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752 c17.455,0,31.656,14.201,31.656,31.655V122.407z" />
+                                    <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561 C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561 c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z" />
+                                    <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78 c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78 C135.661,29.421,132.821,28.251,129.921,28.251z" />
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <!--@KimchhunPoeng-->
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" class="icon icons8-Facebook-Filled" >
+                                <path d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z" />
+                            </svg>
+                        </a>
+                        <a href="">email</a>
+                    </div>
+                </section>
             </section>
-
-            <section id="sports">
-                <h2>Sports</h2>
-                <article>
-                    <h3>News on Sports</h3>
-                    <p>More news on sports</p>
-                </article>
+            <section class="scroll 2">
+                <!--Post container-->
+                <div></div>
+                <div>
+                    <button>BUY ARTICLE</button>
+                    <button>VIEW PAST ARTICLES</button>
+                    <button>SOURCES</button>
+                    <!--Donate should be bigger so it stands out more. Kind of like the BUY ARTICLE button but dont do the same thing-->
+                    <button>DONATE</button>
+                </div>
             </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2025 Outlet. All rights reserved. Brought to you by EIHS Coding</p>
-        </footer>
-    </div>
-</body>
+            <section class="scroll 3">
+                <div>
+                    <!--Add the custom underline-->
+                    <h1>ABOUT THE CLUB</h1>
+                    <img alt="Sophia giving a speach (?)" />
+                </div>
+                <div>
+                    <!--Add top line-->
+                    <h3>WELCOME TO THE OUTLET, OUR SCHOOL'S STUDENT-RUN NEWSPAPER CLUB! WE'RE DEDICATED TO CREATING A SPACE WHERE STUDENTS CAN SHARE THEIR VOICES, CELEBRATE OUR COMMUNITY, AND DISCOVER STORIES THAT INSPIRE AND ENTERTAIN. WHETHER IT'S UNCOVERING THE LASTEST CAMPUS NEWS, HIGHLIGHTING STUDENT ACHIEVEMENTS, OR SPARKING CONVERSATIONS ABOUT TOPICS THAT MATTER, THE OUTLET GIVE EVERY STUDENT A PLATFORM TO BE HEARD. OUR GOAL IS TO CONNECT, INFORM, AND INSPIRE THROUGH CREATIVITY, COLLABORATION, AND STORYTELLING. JOIN US AS WE WRITE THE STORIES THAT SHAPE OUR SCHOOL -- ONE ARTICLE, ONE IDEA, AND ONE VOICE AT A TIME.</h3>
+                    <!--Add bottom line-->
+                </div>
+            </section>
+            <section class="scroll 4">
+                <h1>OUR TEAM</h1>
+                <div class="subscroll 1">
+                    <div class="mugshot_1"></div>
+                    <div class="mugshot_2"></div>
+                    <div class="mugshot_3"></div>
+                </div>
+                <div class="subscroll 2">
+                    <div class="mugshot_3"></div>
+                    <div class="mugshot_4"></div>
+                    <div class="mugshot_5"></div>
+                </div>
+            </section>
+            <section class="scroll 5">
+                <div>
+                    <h1>JOIN OR TEAM</h1>
+                    <img />
+                    <img />
+                    <img />
+                </div>
+                <div>
+                    <!--Will be replaced with an a tag that looks like a button-->
+                    <button>CLICK HERE</button>
+                    <h3>ROLES:</h3>
+                    <h5>Writes: describe<br>PHOTOGRAPHERS: describe<br>editors: describe (must apply)<br>Social Media: describe<br>design: describe<br>INTERVIEW: describe</h5>
+                </div>
+            </section>
+            <section class="scroll 6">
+                <div>
+                    <h1>CONTACT</h1>
+                    <img />
+                </div>
+                <div>
+                    <h2>LEADS:</h2>
+                    <h4>CLUB FOUNDERS:</h4>
+                    <h5>TEACHER: [INSERT THOMAS EMAIL HERE]<br>STUDENT: [INSERT SOPHIA EMAIL HERE]</h5>
+                    <br>
+                    <br>
+                    <h4>STUDENT LEADS:</h4>
+                    <h5>WRITING LEAD: [MARIA EMAIL]<br>PHOTOGRAPHY LEAD: [OSCAR EMAIL]<br>EDITING LEAD: [SOPHIA EMAIL]<br>SOCIAL MEDIA LEAD: s2103421@online.houstonisd.org [add name]<br>DESIGN LEAD: [CADY EMAIL]<br>INTERVIEW LEAD: TBD<br>FINANCE LEAD: s2103421@online.houstonisd.org</h5>
+                </div>
+            </section>
+            <section class="scroll 7">
+                <div>
+                    <h1>SOURCES</h1>
+                    <img />
+                </div>
+                <div>
+                    OUR CLUB RUNS OUT OF ENERGY INSTITUTE HIGH SCHOOL IN HISD, WE THANK OUR SCHOOL FOR GIVING US THE OPPORTUNITY TO EXPRESS OUR CREATIVITY AND SHARE OUR PASSON WITH OUR SCHOOL
+                    <img />
+                    <img />
+                </div>
+            </section>
+            <section class="scroll 8">
+                <div>
+                    <h1>DONATE</h1>
+                    <img />
+                </div>
+                <div>
+                    TO DONATE RESOURCES OR FUNDING TO OUR CLUB, PLEASE REACH OUT TO OUR FUNDING MANAGER, ROWAN LAU AT:
+                    <div>
+                        s2103421@online.houstonisd.org
+                        <br>
+                        YOUR DONATION WOULD MEAN THE WORLD.
+                    </div>
+                </div>
+            </section>
+            <section class="scroll 9">
+                <div></div>
+                <div></div>
+                <div>
+                    MORE ARTICLES COMMING SOON!!
+                </div>
+            </section>
+        </div>
+        <!--Gets the latest post-->
+        <script></script>
+    </body>
 </html>
