@@ -10,8 +10,8 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>
-            <section class="scroll 1 visible">
+        <div class="scroll_container">
+            <section class="scroll">
                 <div class="right island">
                     <p id="title">The Outlet</p>
                     <p id="subtitle">Magazine Club @ Energy Institue HS</p>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
             </section>
-            <section class="scroll 2 hidden">
+            <section class="scroll">
                 <!--Post container-->
                 <div></div>
                 <div>
@@ -88,7 +88,7 @@
                     <button>Donate</button>
                 </div>
             </section>
-            <section class="scroll 3 hidden">
+            <section class="scroll">
                 <div>
                     <!--Add the custom underline-->
                     <h1>About The Club</h1>
@@ -100,7 +100,7 @@
                     <!--Add bottom line-->
                 </div>
             </section>
-            <section class="scroll 4 hidden">
+            <section class="scroll">
                 <h1>Our Team</h1>
                 <div class="subscroll 1">
                     <div class="mugshot_1"></div>
@@ -113,7 +113,7 @@
                     <div class="mugshot_5"></div>
                 </div>
             </section>
-            <section class="scroll 5 hidden">
+            <section class="scroll">
                 <div>
                     <h1>Join Our Team</h1>
                     <img />
@@ -127,7 +127,7 @@
                     <h5>Writes: describe<br>Photographers: describe<br>Editors: describe (must apply)<br>Social Media: describe<br>Design: describe<br>Interview: describe</h5>
                 </div>
             </section>
-            <section class="scroll 6 hidden">
+            <section class="scroll">
                 <div>
                     <h1>Contact</h1>
                     <img />
@@ -142,18 +142,18 @@
                     <h5>Writing Lead: [MARIA EMAIL]<br>Photography Lead: [OSCAR EMAIL]<br>Editing Lead: [SOPHIA EMAIL]<br>Social Media Lead: s2103421@online.houstonisd.org [add name]<br>Design Lead: [CADY EMAIL]<br>Interview Lead: TBD<br>Finance Lead: s2103421@online.houstonisd.org</h5>
                 </div>
             </section>
-            <section class="scroll 7 hidden">
+            <section class="scroll">
                 <div>
                     <h1>Sources</h1>
                     <img />
                 </div>
                 <div>
-                    OUR CLUB RUNS OUT OF ENERGY INSTITUTE HIGH SCHOOL IN HISD, WE THANK OUR SCHOOL FOR GIVING US THE OPPORTUNITY TO EXPRESS OUR CREATIVITY AND SHARE OUR PASSON WITH OUR SCHOOL
+                    Oour club runs out of Energy Institute High School in HISD, we thank our school for giving us the opportunity to express our creativity and share our passion with our school
                     <img />
                     <img />
                 </div>
             </section>
-            <section class="scroll 8 hidden">
+            <section class="scroll">
                 <div>
                     <h1>Donate</h1>
                     <img />
@@ -167,7 +167,7 @@
                     </div>
                 </div>
             </section>
-            <section class="scroll 9 hidden">
+            <section class="scroll">
                 <div></div>
                 <div></div>
                 <div>
@@ -175,26 +175,9 @@
                 </div>
             </section>
         </div>
+        <!--Scroll Icon-->
+        <div></div>
         <!--Gets the latest post-->
         <script></script>
-        <!--Scroll control-->
-        <script>
-            function delay(ms) {
-                return new Promise(resolve => setTimeout(resolve, ms));
-            }
-
-            let lastY = window.scrollY;
-
-            window.onscroll = async (ev) => {
-                if (lastY - window.scrollY == 0) return;
-                if (lastY - window.scrollY > 0) {
-                    //Scroll down
-                } else {
-                    //Scroll up
-                }
-
-                await delay(1000);
-            };
-        </script>
     </body>
 </html>
