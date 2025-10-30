@@ -26,23 +26,24 @@ section.scroll {
 }
 
 div.right {
-    position: inherit;
+    position: relative;
     width: 50%;
     height: 100%;
-    right: 0px;
+    left: 50vw;
 }
 
 div.island {
     --margin: 7vh;
     background-color: rgba(255, 255, 255, 0.2);
     margin: var(--margin);
-    margin-right: var(--margin);
     --height: calc(100vh - calc(var(--margin) * 2));
     height: var(--height);
     max-height: var(--height);
     min-height: var(--height);
-    width: 40%;
+    width: calc(50vw - 2 * var(--margin) );
     text-align: center;
+    left: calc(60vw - 2 * var(--margin));
+    top: var(--margin);
 }
 
 #title {
