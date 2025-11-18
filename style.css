@@ -33,17 +33,20 @@ div.right {
 }
 
 div.island {
-    --margin: 7vh;
+    --margin-top: 7vh;
+    --margin-side: 8vw;
     background-color: rgba(255, 255, 255, 0.2);
-    margin: var(--margin);
-    --height: calc(100vh - calc(var(--margin) * 2));
+    margin: var(--margin-top) var(--margin-top) var(--margin-side) calc(var(--margin-side) + 4vw);
+    padding-top: calc(var(--margin-top) / 4);
+    --height: calc(100vh - calc(var(--margin-top) * 2.25));
     height: var(--height);
     max-height: var(--height);
     min-height: var(--height);
-    width: calc(50vw - 2 * var(--margin) );
+    width: calc(50vw - 2 * var(--margin-side));
     text-align: center;
-    left: calc(60vw - 2 * var(--margin));
-    top: var(--margin);
+    right: 0;
+    top: var(--margin-top);
+    font-size: 115%;
 }
 
 #title {
@@ -61,10 +64,14 @@ div#buttons {
     padding: 0 10%;
 }
 
-div#buttons a {
-    color: white;
+div#buttons a svg {
+    padding-bottom: 5%;
     text-decoration: none;
-    font-size: 1em;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+div#buttons a:first-child svg {
+    padding-top: 2%;
 }
 
 div#socials a {
