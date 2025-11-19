@@ -83,21 +83,43 @@
             <section class="scroll">
                 <!--Post container-->
                 <div></div>
-                <div>
-                    <button>Buy Article</button>
-                    <button>View Past Articles</button>
-                    <button>Sources</button>
-                    <!--Donate should be bigger so it stands out more. Kind of like the BUY ARTICLE button but dont do the same thing-->
-                    <button>Donate</button>
+                <div class="right article_buttons">
+                    <a href="">
+                        <svg fill="#FF0000" xmlns="http://www.w3.org/2000/svg" height="5em" width="auto" viewbox="0 0 83 12">
+                            <path d="m6 0c-8 0-8 12 0 12h70c8 0 8-12 0-12z" />
+                            <text fill="#FFFFFF" font-size="calc(1em/2)" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Buy Article</text>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <!--Will replace this with a replace keyword in the actual serverside code-->
+                        <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="4em" width="auto" viewbox="0 0 83 12">
+                            <path d="m0 1c0-.75.25-1 1-1h80c.75 0 1 .25 1 1v10c0 .75-.25 1-1 1h-80c-.75 0-1-.25-1-1l0-10m2-.5h-1c-.3 0-.5.2-.5.5v10c0 .3.2.5.5.5h80c.3 0 .5-.2.5-.5v-10c0-.3-.2-.5-.5-.5z" />
+                            <text fill="rgba(255, 255, 255, 0.75)" font-size="calc(1em/4)" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">View Past Articles</text>
+                        </svg>
+                    </a><br>
+                    <a href="">
+                        <!--Will replace this with a replace keyword in the actual serverside code-->
+                        <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="4em" width="auto" viewbox="0 0 83 12">
+                            <path d="m0 1c0-.75.25-1 1-1h80c.75 0 1 .25 1 1v10c0 .75-.25 1-1 1h-80c-.75 0-1-.25-1-1l0-10m2-.5h-1c-.3 0-.5.2-.5.5v10c0 .3.2.5.5.5h80c.3 0 .5-.2.5-.5v-10c0-.3-.2-.5-.5-.5z" />
+                            <text fill="rgba(255, 255, 255, 0.75)" font-size="calc(1em/4)" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Sources</text>
+                        </svg>
+                    </a><br>
+                    <a href="">
+                        <!--Will replace this with a replace keyword in the actual serverside code-->
+                        <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="4em" width="auto" viewbox="0 0 83 12">
+                            <path d="m0 1c0-.75.25-1 1-1h80c.75 0 1 .25 1 1v10c0 .75-.25 1-1 1h-80c-.75 0-1-.25-1-1l0-10m2-.5h-1c-.3 0-.5.2-.5.5v10c0 .3.2.5.5.5h80c.3 0 .5-.2.5-.5v-10c0-.3-.2-.5-.5-.5z" />
+                            <text fill="rgba(255, 255, 255, 0.75)" font-size="calc(1em/4)" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Donate</text>
+                        </svg>
+                    </a>
                 </div>
             </section>
             <section class="scroll">
-                <div>
+                <div class="left">
                     <!--Add the custom underline-->
                     <h1>About The Club</h1>
                     <img alt="Sophia giving a speach (?)" />
                 </div>
-                <div>
+                <div class="right overview">
                     <!--Add top line-->
                     <h3>Welcome to The Outlet, our school's student-run newspaper club! We're dedicated to creating a space where students can share their voices, celebrate our community, and discover stories that inspire and entertain.<br><br>Whether it's uncovering the latest campus news, highlighting student achievements, or sparking conversations about topics that matter, The Outlet gives every student a platform to be heard. Our goal is to connect, inform, and inspire through creativity, collaboration, and storytelling.<br><br>Join us as we write the stories that shape our school — one article, one idea, and one voice at a time.</h3>
                     <!--Add bottom line-->
@@ -105,27 +127,55 @@
             </section>
             <section class="scroll">
                 <h1>Our Team</h1>
-                <div class="subscroll 1">
-                    <div class="mugshot_1"></div>
-                    <div class="mugshot_2"></div>
-                    <div class="mugshot_3"></div>
+                <div class="top">
+                    <div class="mugshot">
+                        <img alt="Sophia's mugshot" />
+                        <h3>Sophia</h3>
+                        <h4>Club & Editorial Lead</h4>
+                    </div>
+                    <div class="mugshot">
+                        <img alt="Oscar's mugshot" />
+                        <h3>Oscar</h3>
+                        <h4>Photography Lead</h4>
+                    </div>
+                    <div class="mugshot">
+                        <img alt="Rowan's mugshot" />
+                        <h3>Rowan</h3>
+                        <h4>Social & Finance Lead</h4>
+                    </div>
                 </div>
-                <div class="subscroll 2">
-                    <div class="mugshot_3"></div>
-                    <div class="mugshot_4"></div>
-                    <div class="mugshot_5"></div>
+                <div class="bottom">
+                    <div class="mugshot">
+                        <img alt="Cady's mugshot" />
+                        <h3>Cady</h3>
+                        <h4>Design Co-Lead</h4>
+                    </div>
+                    <div class="mugshot">
+                        <img alt="Gabriel's mugshot" />
+                        <h3>Gabriel</h3>
+                        <h4>Design Co-Lead</h4>
+                    </div>
+                    <div class="mugshot">
+                        <img alt="Maria's mugshot" />
+                        <h3>Maria</h3>
+                        <h4>Writing Lead</h4>
+                    </div>
                 </div>
             </section>
             <section class="scroll">
                 <div>
                     <h1>Join Our Team</h1>
-                    <img />
-                    <img />
-                    <img />
+                    <img alt="Meeting photo #1" />
+                    <img alt="Meeting photo #2" />
+                    <img alt="Indoor team stair photo" />
                 </div>
                 <div>
-                    <!--Will be replaced with an a tag that looks like a button-->
-                    <button>Click Here</button>
+                    <a href="">
+                        <svg fill="#FF0000" xmlns="http://www.w3.org/2000/svg" height="5em" width="auto" viewbox="0 0 83 12">
+                            <path d="m6 0c-8 0-8 12 0 12h70c8 0 8-12 0-12z" />
+                            <text fill="#FFFFFF" font-size="calc(1em/2)" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Click Here!</text>
+                        </svg>
+                    </a>
                     <h3>Roles:</h3>
                     <h5>Writes: describe<br>Photographers: describe<br>Editors: describe (must apply)<br>Social Media: describe<br>Design: describe<br>Interview: describe</h5>
                 </div>
@@ -151,7 +201,7 @@
                     <img />
                 </div>
                 <div>
-                    Oour club runs out of Energy Institute High School in HISD, we thank our school for giving us the opportunity to express our creativity and share our passion with our school
+                    Our club runs out of Energy Institute High School in HISD, we thank our school for giving us the opportunity to express our creativity and share our passion with our school
                     <img />
                     <img />
                 </div>

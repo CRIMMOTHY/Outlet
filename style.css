@@ -23,16 +23,27 @@ section.scroll {
     height: 100vh;
     width: 100vw;
     scroll-snap-align: start;
+    position: relative;
 }
 
 div.right {
-    position: relative;
+    position: absolute;
     width: 50%;
     height: 100%;
     left: 50vw;
+    right: 0;
+}
+
+div.left {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 50vw;
+    left: 0;
 }
 
 div.island {
+    position: relative;
     --margin-top: 7vh;
     --margin-side: 8vw;
     background-color: rgba(255, 255, 255, 0.2);
@@ -76,4 +87,39 @@ div#buttons a:first-child svg {
 
 div#socials a {
     color: transparent;
+}
+
+div.article_buttons {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+div.article_buttons a svg {
+    margin-top: 10%;
+}
+
+div.article_buttons a:first-child svg {
+    margin-top: 5%;
+}
+
+div.overview {
+    background-color: #4370b6;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+}
+
+div.top, div.bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+div.bottom {
+    bottom: 0;
+}
+
+div.mugshot {
+    text-align: center;
 }
