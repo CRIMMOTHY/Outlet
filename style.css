@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("./vecteezy_deep-blue-and-vintage-background-by-crumpled-paper-texture_3335917.jpg");
+    background-image: url("./webfiles/vecteezy_deep-blue-and-vintage-background-by-crumpled-paper-texture_3335917.jpg");
     color: white;
     margin: 0;
     font-family: "Roboto", sans-serif, auto;
@@ -32,6 +32,8 @@ div.right {
     height: 100%;
     left: 50vw;
     right: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
 }
 
 div.left {
@@ -91,7 +93,6 @@ div#socials a {
 
 div.article_buttons {
     background-color: rgba(255, 255, 255, 0.2);
-    text-align: center;
 }
 
 div.article_buttons a svg {
@@ -102,6 +103,10 @@ div.article_buttons a:first-child svg {
     margin-top: 5%;
 }
 
+div.about {
+    text-align: center;
+}
+
 div.overview {
     background-color: #4370b6;
     text-align: center;
@@ -110,10 +115,13 @@ div.overview {
     align-items: center;
 }
 
-div.top, div.bottom {
-    width: 100%;
+div.horizontal, div.top, div.bottom {
     display: flex;
     flex-direction: row;
+}
+
+div.top, div.bottom {
+    width: 100%;
 }
 
 div.bottom {
