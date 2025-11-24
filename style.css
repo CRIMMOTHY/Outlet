@@ -41,7 +41,7 @@ div.right {
     text-align: right;
 }
 
-div.left img {
+div.left img#main {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -74,7 +74,6 @@ div.island {
     max-height: var(--height);
     min-height: var(--height);
     width: calc(50vw - 2 * var(--margin-side));
-    text-align: center;
     right: 0;
 }
 
