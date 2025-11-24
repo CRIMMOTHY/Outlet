@@ -79,28 +79,37 @@ div.island {
 }
 
 #title {
-    font-weight: 700;
+    font-weight: 1000;
     font-size: 3.6em;
-    margin: 2vh 0 0 0;
+    margin: 1.75vh 0 0 0;
 }
 
 #subtitle {
-    font-weight: 500;
+    font-weight: 550;
     font-size: 1.3em;
+    margin: 1vh 0 0 0;
 }
 
 div#buttons {
     padding: 0 5%;
+    margin: 1vh 0 0 0;
 }
 
 div#buttons a svg {
     padding-bottom: 5%;
     text-decoration: none;
     color: rgb(255, 255, 255);
+    margin: 3vh 0 0 0;
+    font-weight: 420;
 }
 
 div#buttons a:first-child svg {
     padding-top: 2%;
+}
+
+div#socials a img {
+    height: 5vh;
+    margin: 2vh 4vh 0 4vh;
 }
 
 div#socials a {
