@@ -12,9 +12,11 @@ body {
     font-variation-settings: "wdth" 100;
     height: 100vh;
     width: 100vw;
+    top: 0;
 }
 
 div.scroll_container {
+    top: 0;
     height: 100%;
     width: 100%;
     overflow-y: scroll;
@@ -23,6 +25,7 @@ div.scroll_container {
 }
 
 section.scroll {
+    top: 0;
     height: 100%;
     width: 100%;
     scroll-snap-align: start;
@@ -36,6 +39,20 @@ div.right {
     left: 50vw;
     right: 0;
     text-align: right;
+}
+
+div.left_image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+div.left_image img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 div.left {
