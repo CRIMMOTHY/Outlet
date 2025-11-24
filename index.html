@@ -13,14 +13,31 @@
     </head>
     <body>
         <svg style="display: hidden;position: absolute;">
-            <clipPath id="" clipPathUnits="objectBoundingBox">
-                <path d="" />
+            <!--Come back and make not relative to simplify(?)-->
+            <clipPath id="bruhhh" clipPathUnits="objectBoundingBox">
+                <circle cx="0.098" cy="0.28" r=".098" />
+                <circle cx="0.308" cy="0.28" r=".098" />
+                <circle cx="0.511" cy="0.287" r=".098" />
+
+                <circle cx="0.098" cy="0.49" r=".098" />
+                <circle cx="0.308" cy="0.49" r=".098" />
+                <circle cx="0.518" cy="0.49" r=".098" />
+
+                <circle cx="0.105" cy="0.693" r=".098" />
+                <circle cx="0.308" cy="0.7" r=".098" />
+                <circle cx="0.518" cy="0.7" r=".098" />
+
+                <path d="M0.196 0.28c.0 .056 .056 .112 .112 .112l-.098 .098c.0 -.056 -.056 -.112 -.112 -.112z" />
+                <path d="M0.406 0.49c.0 .056 .056 .112 .112 .112l-.098 .098c.0 -.056 -.056 -.112 -.112 -.112z" />
+
+                <path d="M0.406 0.28c.0 0.112 0.112 .112 .112 .112l-.098 .098c.0 -0.056 -0.056 -.112 -.112 -.112z" />
+                <path d="M0.196 0.49c.0 0.056 0.056 .112 .112 .112l-.098 .098c.0 -0.112 -0.112 -.112 -.112 -.112z" />
             </clipPath>
         </svg>
         <div class="scroll_container">
             <section class="scroll">
-                <div class="left_image"> 
-                    <img src="img/Copy of Outlet Website Mock-Up.png">
+                <div class="left"> 
+                    <img id="main" src="img/Copy of Outlet Website Mock-Up.png">
                 </div>
                 <div class="right">
                     <div class="island text">
@@ -232,7 +249,10 @@
             <section class="scroll">
                 <div class="left">
                     <h1>Donate</h1>
-                    <img />
+                    <!--Should be changed to be simpler-->
+                    <div style="height:60em;width:60em;clip-path:url(#bruhhh);">
+                        <img style="height:60em;" src="./img/IMG_2651.jpg" />
+                    </div>
                 </div>
                 <div class="right text">
                     To donate resources or funding to our club, please reach out to our funding manager, Rowan Lau at:
