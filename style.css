@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url("./webfiles/vecteezy_deep-blue-and-vintage-background-by-crumpled-paper-texture_3335917.jpg");
+    background-image: url("./vecteezy_deep-blue-and-vintage-background-by-crumpled-paper-texture_3335917.jpg");
     color: white;
     margin: 0;
     font-family: "Roboto", sans-serif, auto;
@@ -38,8 +38,7 @@ div.right {
     height: 100%;
     left: 50vw;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    text-align: center;
+    text-align: right;
 }
 
 div.left_image {
@@ -62,6 +61,12 @@ div.left {
     height: 100%;
     right: 50vw;
     left: 0;
+    text-align: left;
+}
+
+div.text {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
 }
 
 div.island {
@@ -69,7 +74,7 @@ div.island {
     --margin-top: 7vh;
     --margin-side: 8vw;
     background-color: rgba(255, 255, 255, 0.2);
-    margin: var(--margin-top) var(--margin-top) var(--margin-side) calc(var(--margin-side) + 4vw);
+    margin: var(--margin-top) var(--margin-side) var(--margin-top) calc(var(--margin-side) + 4vw);
     padding-top: calc(var(--margin-top) / 4);
     --height: calc(100vh - calc(var(--margin-top) * 2.25));
     height: var(--height);
@@ -78,8 +83,6 @@ div.island {
     width: calc(50vw - 2 * var(--margin-side));
     text-align: center;
     right: 0;
-    top: var(--margin-top);
-    top: 0;
 }
 
 #title {
@@ -142,9 +145,8 @@ div.overview div {
     height: 100%;
 }
 
-div.horizontal, div.top, div.bottom {
-    display: flex;
-    flex-direction: row;
+div.horizontal img, div.top div, div.bottom div {
+    display: inline-block;
 }
 
 div.top, div.bottom {

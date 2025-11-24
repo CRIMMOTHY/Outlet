@@ -1,3 +1,5 @@
+<!--Use clipPath svg element and css style to crop images-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,15 +12,15 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!--svg id="arrow" stroke="#FFFFFF" stroke-width="2" fill="none" viewbox="0 0 2 1" height="100px" width="200px">
-            <path d="m0 0 1 1 1-1" />
-        </svg-->
+        <svg style="display: hidden;position: absolute;">
+            <clipPath id="" clipPathUnits="objectBoundingBox">
+                <path d="" />
+            </clipPath>
+        </svg>
         <div class="scroll_container">
             <section class="scroll">
-                <div class="left_image"> 
-                    <img src="webfiles/Copy of Outlet Website Mock-Up.png">
-                </div>
-                <div class="right island">
+                <div class="right">
+                    <div class="island text">
                         <p id="title">The Outlet</p>
                         <p id="subtitle">Magazine Club @ Energy Institue HS</p>
                         <div id="buttons">
@@ -82,10 +84,9 @@
                             </a>
                         </div>
                     </div>
+                </div>
             </section>
             <section class="scroll">
-                <!--Post container-->
-                <div></div>
                 <div class="left article_buttons">
                     <a href="">
                         <svg fill="#FF0000" xmlns="http://www.w3.org/2000/svg" height="4.5em" width="100%" viewbox="0 0 83 12">
@@ -115,6 +116,8 @@
                         </svg>
                     </a>
                 </div>
+                <!--Post container-->
+                <div></div>
             </section>
             <section class="scroll">
                 <div class="left about">
@@ -130,7 +133,7 @@
                     <div>
                         <h3>Welcome to The Outlet, our school's student-run newspaper club! We're dedicated to creating a space where students can share their voices, celebrate our community, and discover stories that inspire and entertain.<br><br>Whether it's uncovering the latest campus news, highlighting student achievements, or sparking conversations about topics that matter, The Outlet gives every student a platform to be heard. Our goal is to connect, inform, and inspire through creativity, collaboration, and storytelling.<br><br>Join us as we write the stories that shape our school — one article, one idea, and one voice at a time.</h3>
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -24 500 26" height="4em" width="100%" stroke="#FFFFFF" stroke-width="0.5%">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;bottom:4em;left:0;" viewBox="0 -24 500 26" height="4em" width="100%" stroke="#FFFFFF" stroke-width="0.5%">
                         <path d="m0 0h498" />
                     </svg>
                     <!--Add bottom line-->
@@ -176,13 +179,17 @@
             <section class="scroll">
                 <div class="left">
                     <h1>Join Our Team</h1>
-                    <div class="horizontal" style="--size: 45%">
-                        <img src="./webfiles/IMG_2691.jpg" style="width:var(--size);height:var(--size)" alt="Meeting photo #1" />
-                        <img src="./webfiles/IMG_2682.jpg" style="width:var(--size);height:var(--size)" alt="Meeting photo #2" />
+                    <div class="horizontal">
+                        <div style="width:14vw;height:14vw;overflow: hidden;">
+                            <img src="./IMG_2691.jpg" style="width:20vw;transform: translateY(-35%);" alt="Meeting photo #1" />
+                        </div>
+                        <div style="width:14vw;height:14vw;overflow: hidden;">
+                            <img src="./IMG_2682.jpg" style="height:14vw;" alt="Meeting photo #2" />
+                        </div>
                     </div>
-                    <img src="./webfiles/_DSC0435.jpg" height="auto" width="50%" alt="Indoor team stair photo" />
+                    <img src="./_DSC0435.jpg" height="auto" width="50%" alt="Indoor team stair photo" />
                 </div>
-                <div class="right">
+                <div class="right text">
                     <a href="">
                         <svg fill="#FF0000" xmlns="http://www.w3.org/2000/svg" height="4.5em" width="100%" viewbox="0 0 83 12">
                             <path d="m6 0c-8 0-8 12 0 12h70c8 0 8-12 0-12z" />
@@ -194,11 +201,7 @@
                 </div>
             </section>
             <section class="scroll">
-                <div class="left">
-                    <h1>Contact</h1>
-                    <img />
-                </div>
-                <div class="right">
+                <div class="left text">
                     <h2>Leads:</h2>
                     <h4>Club Founders:</h4>
                     <h5>Teacher: [INSERT THOMAS EMAIL HERE]<br>Student: [INSERT SOPHIA EMAIL HERE]</h5>
@@ -207,13 +210,17 @@
                     <h4>Student Leads:</h4>
                     <h5>Writing Lead: [MARIA EMAIL]<br>Photography Lead: [OSCAR EMAIL]<br>Editing Lead: [SOPHIA EMAIL]<br>Social Media Lead: s2103421@online.houstonisd.org [add name]<br>Design Lead: [CADY EMAIL]<br>Interview Lead: TBD<br>Finance Lead: s2103421@online.houstonisd.org</h5>
                 </div>
+                <div class="right">
+                    <h1>Contact</h1>
+                    <img />
+                </div>
             </section>
             <section class="scroll">
                 <div class="left">
                     <h1>Sources</h1>
                     <img />
                 </div>
-                <div class="right">
+                <div class="right text">
                     Our club runs out of Energy Institute High School in HISD, we thank our school for giving us the opportunity to express our creativity and share our passion with our school
                     <img />
                     <img />
@@ -224,7 +231,7 @@
                     <h1>Donate</h1>
                     <img />
                 </div>
-                <div>
+                <div class="right text">
                     To donate resources or funding to our club, please reach out to our funding manager, Rowan Lau at:
                     <div>
                         s2103421@online.houstonisd.org
