@@ -106,7 +106,7 @@ div#buttons a:first-child svg {
     padding-top: 2%;
 }
 
-div#socials a img {
+div#socials a * {
     height: 5vh;
     margin: 2vh 4vh 0 4vh;
 }
@@ -160,4 +160,11 @@ div.bottom {
 
 div.mugshot {
     text-align: center;
+}
+
+div.funky_img {
+    height:60em;
+    width:60em;
+    clip-path:url(#bruhhh);
+    position: absolute;
 }
