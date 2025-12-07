@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <svg style="display: hidden;position: absolute;">
+        <svg style="position: absolute;">
             <!--Come back and make not relative to simplify(?)-->
             <clipPath id="bruhhh" clipPathUnits="objectBoundingBox">
                 <circle cx="0.098" cy="0.28" r=".098" />
@@ -35,38 +35,40 @@
             </clipPath>
         </svg>
         <div class="scroll_container">
-            <section class="scroll">
-                <div class="left"> 
-                    <img id="main" src="img/Copy of Outlet Website Mock-Up.png">
+            <section id="top">
+                <div class="left">
+                    <svg class="main" viewbox="0 0 1066 1066" fill="#4685e9">
+                        <clipPath id="mainCP">
+                            <circle cx="50%" cy="50%" r="49%" />
+                        </clipPath>
+                        <circle cx="44%" cy="74%" r="50%" />
+                        <image y="-190" href="./img/stair.jpeg" style="clip-path: url(#mainCP);transform: translate(-6%,24%);" />
+                    </svg>
                 </div>
                 <div class="right">
                     <div class="island text">
                         <p id="title">The Outlet</p>
                         <p id="subtitle">Magazine Club @ Energy Institue HS</p>
                         <div id="buttons">
-                            <a href="">
-                                <!--Will replace this with a replace keyword in the actual serverside code-->
+                            <a href="#about">
                                 <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="4.2em" width="100%" viewbox="0 0 2120.4809862232228 300">
                                     <path d="M2091.22493770384,14.0309620450099C2099.583808709378,14.0309620450099 2106.4500241782125,20.897177513844532 2106.4500241782125,29.256048519382347L2106.4500241782125,270.7439514806177C2106.4500241782125,279.10282248615556 2099.583808709378,285.96903795499014 2091.22493770384,285.96903795499014L29.256048519382347,285.96903795499014C20.897177513844532,285.96903795499014 14.0309620450099,279.10282248615545 14.0309620450099,270.7439514806177L14.0309620450099,29.256048519382347C14.0309620450099,20.897177513844532 20.897177513844532,14.0309620450099 29.256048519382347,14.0309620450099L2091.22493770384,14.0309620450099M2091.22493770384,0L29.256048519382347,0C13.135368722987993,0 0,13.135368722987993 0,29.256048519382347L0,270.7439514806177C0,286.86463127701205 13.135368722987993,300 29.256048519382347,300L2091.22493770384,300C2107.3456175002343,300 2120.4809862232228,286.86463127701205 2120.4809862232228,270.7439514806177L2120.4809862232228,29.256048519382347C2120.4809862232228,13.135368722987993 2107.3456175002343,0 2091.22493770384,0Z" />
                                     <text fill="rgba(255, 255, 255, 1)" font-size="calc(25em/4)" x="50%" y="55%" text-anchor="middle" dominant-baseline="middle">About The Club</text>
                                 </svg>
                             </a><br>
-                            <a href="">
-                                <!--Will replace this with a replace keyword in the actual serverside code-->
+                            <a href="#team">
                                 <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="4.2em" width="100%" viewbox="0 0 2120.4809862232228 300">
                                     <path d="M2091.22493770384,14.0309620450099C2099.583808709378,14.0309620450099 2106.4500241782125,20.897177513844532 2106.4500241782125,29.256048519382347L2106.4500241782125,270.7439514806177C2106.4500241782125,279.10282248615556 2099.583808709378,285.96903795499014 2091.22493770384,285.96903795499014L29.256048519382347,285.96903795499014C20.897177513844532,285.96903795499014 14.0309620450099,279.10282248615545 14.0309620450099,270.7439514806177L14.0309620450099,29.256048519382347C14.0309620450099,20.897177513844532 20.897177513844532,14.0309620450099 29.256048519382347,14.0309620450099L2091.22493770384,14.0309620450099M2091.22493770384,0L29.256048519382347,0C13.135368722987993,0 0,13.135368722987993 0,29.256048519382347L0,270.7439514806177C0,286.86463127701205 13.135368722987993,300 29.256048519382347,300L2091.22493770384,300C2107.3456175002343,300 2120.4809862232228,286.86463127701205 2120.4809862232228,270.7439514806177L2120.4809862232228,29.256048519382347C2120.4809862232228,13.135368722987993 2107.3456175002343,0 2091.22493770384,0Z" />
                                     <text fill="rgba(255, 255, 255, 1)" font-size="calc(25em/4)" x="50%" y="55%" text-anchor="middle" dominant-baseline="middle">Our Team</text>
                                 </svg>
                             </a><br>
-                            <a href="">
-                                <!--Will replace this with a replace keyword in the actual serverside code-->
+                            <a href="#join">
                                 <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="4.2em" width="100%" viewbox="0 0 2120.4809862232228 300">
                                     <path d="M2091.22493770384,14.0309620450099C2099.583808709378,14.0309620450099 2106.4500241782125,20.897177513844532 2106.4500241782125,29.256048519382347L2106.4500241782125,270.7439514806177C2106.4500241782125,279.10282248615556 2099.583808709378,285.96903795499014 2091.22493770384,285.96903795499014L29.256048519382347,285.96903795499014C20.897177513844532,285.96903795499014 14.0309620450099,279.10282248615545 14.0309620450099,270.7439514806177L14.0309620450099,29.256048519382347C14.0309620450099,20.897177513844532 20.897177513844532,14.0309620450099 29.256048519382347,14.0309620450099L2091.22493770384,14.0309620450099M2091.22493770384,0L29.256048519382347,0C13.135368722987993,0 0,13.135368722987993 0,29.256048519382347L0,270.7439514806177C0,286.86463127701205 13.135368722987993,300 29.256048519382347,300L2091.22493770384,300C2107.3456175002343,300 2120.4809862232228,286.86463127701205 2120.4809862232228,270.7439514806177L2120.4809862232228,29.256048519382347C2120.4809862232228,13.135368722987993 2107.3456175002343,0 2091.22493770384,0Z" />
                                     <text fill="rgba(255, 255, 255, 1)" font-size="calc(25em/4)" x="50%" y="55%" text-anchor="middle" dominant-baseline="middle">Join The Club</text>
                                 </svg>
                             </a><br>
-                            <a href="">
-                                <!--Will replace this with a replace keyword in the actual serverside code-->
+                            <a href="#contact">
                                 <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="4.2em" width="100%" viewbox="0 0 2120.4809862232228 300">
                                     <path d="M2091.22493770384,14.0309620450099C2099.583808709378,14.0309620450099 2106.4500241782125,20.897177513844532 2106.4500241782125,29.256048519382347L2106.4500241782125,270.7439514806177C2106.4500241782125,279.10282248615556 2099.583808709378,285.96903795499014 2091.22493770384,285.96903795499014L29.256048519382347,285.96903795499014C20.897177513844532,285.96903795499014 14.0309620450099,279.10282248615545 14.0309620450099,270.7439514806177L14.0309620450099,29.256048519382347C14.0309620450099,20.897177513844532 20.897177513844532,14.0309620450099 29.256048519382347,14.0309620450099L2091.22493770384,14.0309620450099M2091.22493770384,0L29.256048519382347,0C13.135368722987993,0 0,13.135368722987993 0,29.256048519382347L0,270.7439514806177C0,286.86463127701205 13.135368722987993,300 29.256048519382347,300L2091.22493770384,300C2107.3456175002343,300 2120.4809862232228,286.86463127701205 2120.4809862232228,270.7439514806177L2120.4809862232228,29.256048519382347C2120.4809862232228,13.135368722987993 2107.3456175002343,0 2091.22493770384,0Z" />
                                     <text fill="rgba(255, 255, 255, 1)" font-size="calc(25em/4)" x="50%" y="55%" text-anchor="middle" dominant-baseline="middle">Contact</text>
@@ -92,7 +94,7 @@
                     </div>
                 </div>
             </section>
-            <section class="scroll">
+            <section id="article">
                 <div class="left article_buttons">
                     <a href="">
                         <svg fill="#FF0000" xmlns="http://www.w3.org/2000/svg" height="4.5em" width="100%" viewbox="0 0 83 12">
@@ -101,21 +103,18 @@
                         </svg>
                     </a>
                     <a href="">
-                        <!--Will replace this with a replace keyword in the actual serverside code-->
                         <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="4em" width="100%" viewbox="0 0 83 12">
                             <path d="m0 1c0-.75.25-1 1-1h80c.75 0 1 .25 1 1v10c0 .75-.25 1-1 1h-80c-.75 0-1-.25-1-1l0-10m2-.5h-1c-.3 0-.5.2-.5.5v10c0 .3.2.5.5.5h80c.3 0 .5-.2.5-.5v-10c0-.3-.2-.5-.5-.5z" />
                             <text fill="rgba(255, 255, 255, 0.75)" font-size="calc(1em/4)" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">View Past Articles</text>
                         </svg>
                     </a><br>
-                    <a href="">
-                        <!--Will replace this with a replace keyword in the actual serverside code-->
+                    <a href="#sources">
                         <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="4em" width="100%" viewbox="0 0 83 12">
                             <path d="m0 1c0-.75.25-1 1-1h80c.75 0 1 .25 1 1v10c0 .75-.25 1-1 1h-80c-.75 0-1-.25-1-1l0-10m2-.5h-1c-.3 0-.5.2-.5.5v10c0 .3.2.5.5.5h80c.3 0 .5-.2.5-.5v-10c0-.3-.2-.5-.5-.5z" />
                             <text fill="rgba(255, 255, 255, 0.75)" font-size="calc(1em/4)" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Sources</text>
                         </svg>
                     </a><br>
-                    <a href="">
-                        <!--Will replace this with a replace keyword in the actual serverside code-->
+                    <a href="#donate">
                         <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="4em" width="100%" viewbox="0 0 83 12">
                             <path d="m0 1c0-.75.25-1 1-1h80c.75 0 1 .25 1 1v10c0 .75-.25 1-1 1h-80c-.75 0-1-.25-1-1l0-10m2-.5h-1c-.3 0-.5.2-.5.5v10c0 .3.2.5.5.5h80c.3 0 .5-.2.5-.5v-10c0-.3-.2-.5-.5-.5z" />
                             <text fill="rgba(255, 255, 255, 0.75)" font-size="calc(1em/4)" x="50%" y="50%" text-anchor="middle" dominant-baseline="middle">Donate</text>
@@ -125,7 +124,7 @@
                 <!--Post container-->
                 <div></div>
             </section>
-            <section class="scroll">
+            <section id="about">
                 <div class="left about">
                     <!--Add the custom underline-->
                     <h1>About The Club</h1>
@@ -133,8 +132,11 @@
                 </div>
                 <div class="right overview">
                     <!--Add top line-->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -24 500 26" height="4em" width="100%" stroke="#FFFFFF" stroke-width="0.5%">
+                    <!--svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -24 500 26" height="4em" width="100%" stroke="#FFFFFF" stroke-width="0.5%">
                         <path d="m0 0h498" />
+                    </svg-->
+                    <svg viewbox="0 0 1 1" height="10em" width="48vw" fill="none" stroke="#FFFFFF" stroke-width="1">
+                        <path d="m0 0h1" />
                     </svg>
                     <div>
                         <h3>Welcome to The Outlet, our school's student-run newspaper club! We're dedicated to creating a space where students can share their voices, celebrate our community, and discover stories that inspire and entertain.<br><br>Whether it's uncovering the latest campus news, highlighting student achievements, or sparking conversations about topics that matter, The Outlet gives every student a platform to be heard. Our goal is to connect, inform, and inspire through creativity, collaboration, and storytelling.<br><br>Join us as we write the stories that shape our school — one article, one idea, and one voice at a time.</h3>
@@ -145,7 +147,7 @@
                     <!--Add bottom line-->
                 </div>
             </section>
-            <section class="scroll">
+            <section id="team">
                 <h1>Our Team</h1>
                 <div class="top">
                     <div class="mugshot">
@@ -182,9 +184,9 @@
                     </div>
                 </div>
             </section>
-            <section class="scroll">
+            <section id="join">
                 <div class="left">
-                    <h1>Join Our Team</h1>
+                    <div id="title">Join Our Team</div>
                     <div class="horizontal">
                         <div style="width:14vw;height:14vw;overflow: hidden;">
                             <img src="img/IMG_2691.jpg" style="width:20vw;transform: translateY(-35%);" alt="Meeting photo #1" />
@@ -193,7 +195,7 @@
                             <img src="img/IMG_2682.jpg" style="height:14vw;" alt="Meeting photo #2" />
                         </div>
                     </div>
-                    <img src="img/_DSC0435.jpg" height="auto" width="50%" alt="Indoor team stair photo" />
+                    <img class="stair_photo" src="img/_DSC0435.jpg" alt="Indoor team stair photo" />
                 </div>
                 <div class="right text">
                     <a href="">
@@ -206,7 +208,7 @@
                     <h5>Writes: describe<br>Photographers: describe<br>Editors: describe (must apply)<br>Social Media: describe<br>Design: describe<br>Interview: describe</h5>
                 </div>
             </section>
-            <section class="scroll">
+            <section id="contact">
                 <div class="left text">
                     <h2>Leads:</h2>
                     <h4>Club Founders:</h4>
@@ -221,7 +223,7 @@
                     <img />
                 </div>
             </section>
-            <section class="scroll">
+            <section id="sources">
                 <div class="left">
                     <h1>Sources</h1>
                     <img />
@@ -232,12 +234,12 @@
                     <img />
                 </div>
             </section>
-            <section class="scroll">
+            <section id="donate">
                 <div class="left">
                     <h1>Donate</h1>
                     <!--Should be changed to be simpler-->
                     <div class="funky_img">
-                        <img style="height:60em;" src="./img/IMG_2651.jpg" />
+                        <img style="height:var(--size);" src="./img/IMG_2651.jpg" />
                     </div>
                 </div>
                 <div class="right text">
@@ -249,7 +251,7 @@
                     </div>
                 </div>
             </section>
-            <section class="scroll">
+            <section id="articles">
                 <div></div>
                 <div></div>
                 <div>

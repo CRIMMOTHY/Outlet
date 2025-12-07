@@ -24,7 +24,7 @@ div.scroll_container {
     overflow-x: hidden;
 }
 
-section.scroll {
+div.scroll_container section {
     top: 0;
     height: 100%;
     width: 100%;
@@ -41,11 +41,12 @@ div.right {
     text-align: right;
 }
 
-div.left img#main {
+.main {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 195%
+    height: 85vh;
+    width: 85vh;
 }
 
 div.left {
@@ -146,7 +147,23 @@ div.overview div {
     height: 100%;
 }
 
-div.horizontal img, div.top div, div.bottom div {
+div.horizontal {
+    display: flex;
+}
+
+div.horizontal div {
+    margin-bottom: 1vh;
+}
+
+div.horizontal div:first-child {
+    margin-right: 1vh;
+}
+
+img.stair_photo {
+    width: calc(28vw + 1vh);
+}
+
+div.top div, div.bottom div {
     display: inline-block;
 }
 
@@ -163,8 +180,9 @@ div.mugshot {
 }
 
 div.funky_img {
-    height:60em;
-    width:60em;
+    --size: 40em;
+    height: var(--size);
+    width: var(--size);
     clip-path:url(#bruhhh);
     position: absolute;
 }
