@@ -66,26 +66,28 @@ div.island {
     position: absolute;
     --margin-top: 7vh;
     --margin-side: 6.7vw;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: var(--margin-top) var(--margin-side) var(--margin-top) calc(var(--margin-side) + 4vw);
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: var(--margin-top) var(--margin-side) var(--margin-top) calc(var(--margin-side) + 9vw);
     padding-top: calc(var(--margin-top) / 4);
     --height: calc(100vh - calc(var(--margin-top) * 2.25));
     height: var(--height);
     max-height: var(--height);
     min-height: var(--height);
-    width: calc(50vw - 2 * var(--margin-side));
+    width: calc(45vw - 2 * var(--margin-side));
     right: 0;
 }
 
 #title {
     font-weight: 1000;
-    font-size: 3.6em;
-    margin: 1.75vh 0 0 0;
+    font-size: 3vw;
+    letter-spacing: 0.25vw;
+    margin: 0.875vh 0 0 0;
 }
 
 #subtitle {
-    font-weight: 550;
-    font-size: 1.3em;
+    font-weight: 400;
+    font-size: 1.2vw;
+    letter-spacing: 0.2vw;
     margin: 1vh 0 0 0;
 }
 
@@ -95,11 +97,13 @@ div#buttons {
 }
 
 div#buttons a svg {
-    padding-bottom: 5%;
+    padding-top: 5%;
     text-decoration: none;
     color: rgb(255, 255, 255);
     margin: 3vh 0 0 0;
     font-weight: 420;
+    width: 100%;
+    height: auto;
 }
 
 div#buttons a:first-child svg {
