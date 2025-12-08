@@ -76,16 +76,17 @@ div.island {
     min-height: var(--height);
     width: calc(45vw - 2 * var(--margin-side));
     right: 0;
+    overflow-y: hidden;
 }
 
-#title {
+div.island > #title {
     font-weight: 1000;
     font-size: 3vw;
     letter-spacing: 0.25vw;
     margin: 0.875vh 0 0 0;
 }
 
-#subtitle {
+div.island > #subtitle {
     font-weight: 400;
     font-size: 1.2vw;
     letter-spacing: 0.2vw;
@@ -134,6 +135,16 @@ div.article_buttons a:first-child svg {
 
 div.about {
     text-align: center;
+    overflow-y: hidden;
+}
+
+div.about > #title {
+    font-weight: 500;
+    font-size: 4.5vw;
+    word-spacing: 0.5vw;
+    letter-spacing: 0.2vw;
+    margin-top: 5vh;
+    margin-bottom: 0;
 }
 
 div.overview {
