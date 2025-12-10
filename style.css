@@ -162,8 +162,28 @@ div.overview div {
     height: 100%;
 }
 
+section#join div.left {
+    text-align: center;
+}
+
+section#join div.left div#title, section#join div.right h3 {
+    text-decoration: underline;
+    font-size: 2vw;
+    letter-spacing: 0.125vw;
+}
+
+section#join div.left div#title {
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+}
+
+section#join div.right h5 {
+    font-size: 1vw;
+}
+
 div.horizontal {
     display: flex;
+    justify-content: center;
 }
 
 div.horizontal div {
@@ -175,7 +195,13 @@ div.horizontal div:first-child {
 }
 
 img.stair_photo {
-    width: calc(28vw + 1vh);
+    width: calc(36vw + 1vh);
+    position: relative;
+    bottom: 5vw;
+}
+
+section#join div.right a svg {
+    margin-top: 14vh;
 }
 
 div.top div, div.bottom div {
@@ -192,6 +218,45 @@ div.bottom {
 
 div.mugshot {
     text-align: center;
+    position: absolute;
+}
+
+section#team > h1 {
+    font-size: 4vw;
+    padding-top: 3vh;
+    margin-left: 5vw;
+}
+
+div.mugshot .photo {
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    overflow: hidden;
+    clip-path: url(#mugshot);
+}
+
+div.mugshot div.photo img {
+    width: calc(calc(1066 / 1363) * 100vw);
+}
+
+div.top div.mugshot {
+    top: -10vh;
+}
+
+div.bottom div.mugshot {
+    top: 30vh;
+}
+
+div.top div.mugshot .photo {
+    top: 15vh;
+}
+
+div.bottom div.mugshot .photo {
+    top: -15vh;
+}
+
+div.bottom div.mugshot svg.photo {
+    top: -7vh;
 }
 
 div.funky_img {

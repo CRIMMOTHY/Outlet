@@ -18,24 +18,23 @@
                 <circle cx="0.098" cy="0.28" r=".098" />
                 <circle cx="0.308" cy="0.28" r=".098" />
                 <circle cx="0.511" cy="0.287" r=".098" />
-
                 <circle cx="0.098" cy="0.49" r=".098" />
                 <circle cx="0.308" cy="0.49" r=".098" />
                 <circle cx="0.518" cy="0.49" r=".098" />
-
                 <circle cx="0.105" cy="0.693" r=".098" />
                 <circle cx="0.308" cy="0.7" r=".098" />
                 <circle cx="0.518" cy="0.7" r=".098" />
-
                 <path d="M.196.28c0 .056.056.112.112.112l-.098.098c0-.056-.056-.112-.112-.112z" />
                 <path d="M.406.49c0 .056.056.112.112.112l-.098.098c0-.056-.056-.112-.112-.112z" />
-
                 <path d="M.406.28c0 .112.112.112.112.112l-.098.098c0-.056-.056-.112-.112-.112z" />
                 <path d="M.196.49c0 .056.056.112.112.112l-.098.098c0-.112-.112-.112-.112-.112z" />
             </clipPath>
             <clipPath id="sophia" clipPathUnits="objectBoundingBox">
                 <circle cx=".4" cy=".6" r=".45" />
             </clipPath>
+            <clipPath id="mugshot" clipPathUnits="objectBoundingBox">
+                <circle cx=".5" cy=".5" r=".25" />
+            </clipPath> 
         </svg>
         <div class="scroll_container">
             <section id="top">
@@ -162,37 +161,67 @@
             <section id="team">
                 <h1>Our Team</h1>
                 <div class="top">
-                    <div class="mugshot">
-                        <img alt="Sophia's mugshot" />
+                    <div class="mugshot" style="left: -2.5vw;">
+                        <svg fill="rgba(181, 181, 255, 0.2)" class="photo" style="position: absolute;left: -1.5vw;" viewbox="0 0 1 1">
+                            <rect x="0" y="0" width="1" height="1" />
+                        </svg>
+                        <div class="photo">
+                            <img src="./img/stair.jpeg" style="translate: -49% -28%;scale: 78.75%;" alt="Sophia's mugshot" />
+                        </div>
                         <h3>Sophia</h3>
                         <h4>Club & Editorial Lead</h4>
                     </div>
-                    <div class="mugshot">
-                        <img alt="Oscar's mugshot" />
+                    <div class="mugshot" style="left: 27.5vw;">
+                        <svg fill="rgba(181, 181, 255, 0.2)" class="photo" style="position: absolute;left: -1.5vw;" viewbox="0 0 1 1">
+                            <rect x="0" y="0" width="1" height="1" />
+                        </svg>
+                        <div class="photo">
+                            <img src="./img/stair.jpeg" style="translate: -39% -13%;scale: 78.75%;" alt="Oscar's mugshot" />
+                        </div>
                         <h3>Oscar</h3>
                         <h4>Photography Lead</h4>
                     </div>
-                    <div class="mugshot">
-                        <img alt="Rowan's mugshot" />
+                    <div class="mugshot" style="left: 57.5vw;">
+                        <svg fill="rgba(181, 181, 255, 0.2)" class="photo" style="position: absolute;left: -1.5vw;" viewbox="0 0 1 1">
+                            <rect x="0" y="0" width="1" height="1" />
+                        </svg>
+                        <div class="photo">
+                            <img src="./img/stair.jpeg" style="translate: -36% -27%;scale: 78.75%;" alt="Rowan's mugshot" />
+                        </div>
                         <h3>Rowan</h3>
                         <h4>Social & Finance Lead</h4>
                     </div>
                 </div>
                 <div class="bottom">
-                    <div class="mugshot">
-                        <img alt="Cady's mugshot" />
+                    <div class="mugshot" style="left: 12.5vw;">
                         <h3>Cady</h3>
                         <h4>Design Co-Lead</h4>
+                        <svg fill="rgba(181, 181, 255, 0.2)" class="photo" style="position: absolute;left: -1.5vw;" viewbox="0 0 1 1">
+                            <rect x="0" y="0" width="1" height="1" />
+                        </svg>
+                        <div class="photo">
+                            <img src="./img/stair.jpeg" style="translate: -21% -28%;scale: 78.75%;" alt="Cady's mugshot" />
+                        </div>
                     </div>
-                    <div class="mugshot">
-                        <img alt="Gabriel's mugshot" />
+                    <div class="mugshot" style="left: 42.5vw;">
                         <h3>Gabriel</h3>
                         <h4>Design Co-Lead</h4>
+                        <svg fill="rgba(181, 181, 255, 0.2)" class="photo" style="position: absolute;left: -1.5vw;" viewbox="0 0 1 1">
+                            <rect x="0" y="0" width="1" height="1" />
+                        </svg>
+                        <div class="photo">
+                            <img src="./img/stair.jpeg" style="translate: -22% -16%;scale: 78.75%;" alt="Gabriel's mugshot" />
+                        </div>
                     </div>
-                    <div class="mugshot">
-                        <img alt="Maria's mugshot" />
+                    <div class="mugshot" style="left: 72.5vw;">
                         <h3>Maria</h3>
                         <h4>Writing Lead</h4>
+                        <svg fill="rgba(181, 181, 255, 0.2)" class="photo" style="position: absolute;left: -1.5vw;" viewbox="0 0 1 1">
+                            <rect x="0" y="0" width="1" height="1" />
+                        </svg>
+                        <div class="photo">
+                            <img src="./img/stair.jpeg" style="translate: -8% -28%;scale: 78.75%;" alt="Maria's mugshot" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -200,14 +229,16 @@
                 <div class="left">
                     <div id="title">Join Our Team</div>
                     <div class="horizontal">
-                        <div style="width:14vw;height:14vw;overflow: hidden;">
-                            <img src="./img/IMG_2691.jpg" style="width:20vw;transform: translateY(-35%);" alt="Meeting photo #1" />
+                        <div style="width:18vw;height:18vw;overflow: hidden;">
+                            <img src="./img/IMG_2691.jpg" style="width:26vw;transform: translateY(-35%);" alt="Meeting photo #1" />
                         </div>
-                        <div style="width:14vw;height:14vw;overflow: hidden;">
-                            <img src="./img/IMG_2682.jpg" style="height:14vw;" alt="Meeting photo #2" />
+                        <div style="width:18vw;height:18vw;overflow: hidden;">
+                            <img src="./img/IMG_2682.jpg" style="height:18vw;" alt="Meeting photo #2" />
                         </div>
                     </div>
-                    <img class="stair_photo" src="img/_DSC0435.jpg" alt="Indoor team stair photo" />
+                    <div style="height: 19vw;overflow-y: hidden;">
+                        <img class="stair_photo" src="img/DSC0435.jpg" alt="Indoor team stair photo" />
+                    </div>
                 </div>
                 <div class="right text">
                     <a href="">
