@@ -1,5 +1,3 @@
-<!--Use clipPath svg element and css style to crop images-->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -108,7 +106,7 @@
                             <text fill="#FFFFFF" font-size="calc(1em/2.5)" font-weight="bold" x="50%" y="55%" text-anchor="middle" dominant-baseline="middle">Buy Article</text>
                         </svg>
                     </a>
-                    <div class="buy-rectangle" title="Promotional rectangle"></div>
+                    <div class="buy-rectangle"></div>
                     <a href="">
                         <!--Will replace this with a replace keyword in the actual serverside code-->
                         <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" height="4em" width="100%" viewbox="0 0 150 20">
@@ -132,21 +130,23 @@
                     </a>
                 </div>
                 <!--Post container-->
-                <div class="post_container">
+                <div id="latestArticle" class="post_container">
 
                 </div>
             </section>
             <section id="about">
-                <div class="left about">
+                <div class="left about" style="overflow: hidden;">
                     <p id="title" >About The Club</p>
                     <svg viewbox="0 0 1 2" height="1vh" width="36vw" fill="none" stroke="#FFFFFF" stroke-width="1" preserveAspectRatio="none">
                         <path d="m0 1h1" />
                     </svg>
-                    <svg viewbox="0 0 10 10" style="clip-path: url(#sophia);position: absolute;left:0;top: 6vh;height: 100vh;width: 95vh;transform: scale(90%,94%);" fill="rgba(0,0,0,.15)">
-                        <rect x="0" y="0" width="10" height="10" />
-                    </svg>
-                    <div style="clip-path: url(#sophia);position: absolute;left:-2.5vw;bottom: -5vh;height: 100vh;width: 95vh;overflow:hidden;transform: scale(90%,90%);">
-                        <img style="height:auto;width:44vw;position:absolute;top:0vh;right:7vw;" src="./img/IMG_2681.jpg" alt="Sophia giving a speach (?)" />
+                    <div style="position: absolute;left: 0;bottom: 0;transform: scale(90%);">
+                        <svg viewbox="0 0 10 10" style="clip-path: url(#sophia);position: absolute;left:0;bottom: -5vh;height: 100vh;width: 95vh;" fill="rgba(0,0,0,.15)">
+                            <rect x="0" y="0" width="10" height="10" />
+                        </svg>
+                        <div style="clip-path: url(#sophia);position: absolute;left:-2.5vw;bottom: -5vh;height: 100vh;width: 95vh;overflow:hidden;">
+                            <img style="height:125vh;width:auto;position:absolute;top:0vh;right:7vw;" src="./img/IMG_2681.jpg" alt="Sophia giving a speach (?)" />
+                        </div>
                     </div>
                 </div>
                 <div class="right overview">
@@ -199,31 +199,37 @@
                     <div class="mugshot" style="left: 12.5vw;">
                         <h3>Cady</h3>
                         <h4>Design Co-Lead</h4>
-                        <svg fill="rgba(181, 181, 255, 0.2)" class="photo" style="position: absolute;left: -1.5vw;" viewbox="0 0 1 1">
-                            <rect x="0" y="0" width="1" height="1" />
-                        </svg>
-                        <div class="photo">
-                            <img src="./img/stair.jpeg" style="translate: -21% -28%;scale: 78.75%;" alt="Cady's mugshot" />
+                        <div style="position: relative;top: -14vh;">
+                            <svg fill="rgba(181, 181, 255, 0.2)" class="photo" style="position: absolute;left: -1.5vw;" viewbox="0 0 1 1">
+                                <rect x="0" y="0" width="1" height="1" />
+                            </svg>
+                            <div class="photo">
+                                <img src="./img/stair.jpeg" style="translate: -21% -28%;scale: 78.75%;" alt="Cady's mugshot" />
+                            </div>
                         </div>
                     </div>
                     <div class="mugshot" style="left: 42.5vw;">
                         <h3>Gabriel</h3>
                         <h4>Design Co-Lead</h4>
-                        <svg fill="rgba(181, 181, 255, 0.2)" class="photo" style="position: absolute;left: -1.5vw;" viewbox="0 0 1 1">
-                            <rect x="0" y="0" width="1" height="1" />
-                        </svg>
-                        <div class="photo">
-                            <img src="./img/stair.jpeg" style="translate: -22% -16%;scale: 78.75%;" alt="Gabriel's mugshot" />
+                        <div style="position: relative;top: -14vh;">
+                            <svg fill="rgba(181, 181, 255, 0.2)" class="photo" style="position: absolute;left: -1.5vw;" viewbox="0 0 1 1">
+                                <rect x="0" y="0" width="1" height="1" />
+                            </svg>
+                            <div class="photo">
+                                <img src="./img/stair.jpeg" style="translate: -22% -16%;scale: 78.75%;" alt="Gabriel's mugshot" />
+                            </div>
                         </div>
                     </div>
                     <div class="mugshot" style="left: 72.5vw;">
                         <h3>Maria</h3>
                         <h4>Writing Lead</h4>
-                        <svg fill="rgba(181, 181, 255, 0.2)" class="photo" style="position: absolute;left: -1.5vw;" viewbox="0 0 1 1">
-                            <rect x="0" y="0" width="1" height="1" />
-                        </svg>
-                        <div class="photo">
-                            <img src="./img/stair.jpeg" style="translate: -8% -28%;scale: 78.75%;" alt="Maria's mugshot" />
+                        <div style="position: relative;top: -14vh;">
+                            <svg fill="rgba(181, 181, 255, 0.2)" class="photo" style="position: absolute;left: -1.5vw;" viewbox="0 0 1 1">
+                                <rect x="0" y="0" width="1" height="1" />
+                            </svg>
+                            <div class="photo">
+                                <img src="./img/stair.jpeg" style="translate: -8% -28%;scale: 78.75%;" alt="Maria's mugshot" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -231,16 +237,18 @@
             <section id="join">
                 <div class="left">
                     <div id="title">Join Our Team</div>
-                    <div class="horizontal">
-                        <div style="width:18vw;height:18vw;overflow: hidden;">
-                            <img src="./img/IMG_2691.jpg" style="width:26vw;transform: translateY(-35%);" alt="Meeting photo #1" />
+                    <div style="transform: scale(90%);">
+                        <div class="horizontal">
+                            <div style="width:18vw;height:18vw;overflow: hidden;">
+                                <img src="./img/IMG_2691.jpg" style="width:26vw;transform: translateY(-35%);" alt="Meeting photo #1" />
+                            </div>
+                            <div style="width:18vw;height:18vw;overflow: hidden;">
+                                <img src="./img/IMG_2682.jpg" style="height:18vw;" alt="Meeting photo #2" />
+                            </div>
                         </div>
-                        <div style="width:18vw;height:18vw;overflow: hidden;">
-                            <img src="./img/IMG_2682.jpg" style="height:18vw;" alt="Meeting photo #2" />
+                        <div style="height: 19vw;overflow-y: hidden;">
+                            <img class="stair_photo" src="img/DSC0435.jpg" alt="Indoor team stair photo" />
                         </div>
-                    </div>
-                    <div style="height: 19vw;overflow-y: hidden;">
-                        <img class="stair_photo" src="img/DSC0435.jpg" alt="Indoor team stair photo" />
                     </div>
                 </div>
                 <div class="right text">
@@ -251,21 +259,19 @@
                         </svg>
                     </a>
                     <h3>Roles:</h3>
-                    <h5>Writes: describe<br>Photographers: describe<br>Editors: describe (must apply)<br>Social Media: describe<br>Design: describe<br>Interview: describe</h5>
+                    <p style="font-size: 2.4vw;">Writes: describe<br>Photographers: describe<br>Editors: describe (must apply)<br>Social Media: describe<br>Design: describe<br>Interview: describe</p>
                 </div>
             </section>
             <section id="contact">
                 <div class="left text">
-                    <h2>Leads:</h2>
-                    <h4>Club Founders:</h4>
-                    <h5>Teacher: [INSERT THOMAS EMAIL HERE]<br>Student: [INSERT SOPHIA EMAIL HERE]</h5>
-                    <br>
-                    <br>
-                    <h4>Student Leads:</h4>
+                    <h2 style="font-size: 2.5vw;">Leads:</h2>
+                    <h4 style="font-size: 1.5vw;">Club Founders:</h4>
+                    <h5>Teacher: [INSERT THOMAS EMAIL HERE]<br>Student: [INSERT SOPHIA EMAIL HERE]</h5><br><br>
+                    <h4 style="font-size: 1.5vw;">Student Leads:</h4>
                     <h5>Writing Lead: [MARIA EMAIL]<br>Photography Lead: [OSCAR EMAIL]<br>Editing Lead: [SOPHIA EMAIL]<br>Social Media Lead: s2103421@online.houstonisd.org [add name]<br>Design Lead: [CADY EMAIL]<br>Interview Lead: TBD<br>Finance Lead: s2103421@online.houstonisd.org</h5>
                 </div>
                 <div class="right">
-                    <h1>Contact</h1>
+                    <div id="title">Contact</div>
                     <img src="./img/IMG_2654.jpg" />
                 </div>
             </section>
@@ -307,7 +313,12 @@
         </div>
         <!--Scroll Icon-->
         <div></div>
-        <!--Gets the latest post-->
-        <script></script>
+        <script id="latestArticleJS">
+            const img = document.getElementById("latestArticle").appendChild(document.createElement("img"));
+            fetch("./api/articles_full.json", { method: "GET" }).then((response) => response.json()).then((json) => {
+                img.src = eval(`json.${json.latest}.cover`);
+            });
+            document.getElementById("latestArticleJS").remove();
+        </script>
     </body>
 </html>
