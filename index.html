@@ -39,7 +39,7 @@
                 <circle cx=".5" cy=".5" r=".25" />
             </clipPath>
             <clipPath id="connordoeswork" clipPathUnits="objectBoundingBox">
-                <ellipse cx="0.5" cy="0.5" rx="0.6" ry="0.4" transform="translate(.2,.1) rotate(60 0.5 0.5)" />
+                <ellipse cx="0.5" cy="0.5" rx="0.6" ry="0.4" transform="translate(.2,.1) rotate(70 0.5 0.5)" />
             </clipPath>
         </svg>
         <div class="scroll_container">
@@ -327,7 +327,7 @@
         <script id="latestArticleJS">
             const img = document.getElementById("latestArticle").appendChild(document.createElement("img"));
             fetch("./api/articles_full.json", { method: "GET" }).then((response) => response.json()).then((json) => {
-                img.src = eval(`json.${json.latest}.cover`);
+                img.src = json[0].cover;
             });
             document.getElementById("latestArticleJS").remove();
         </script>
